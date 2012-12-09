@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="HelloFabric" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2012-10.1.8">
+  <Role name="HelloFabric_WebRole">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="BannerText" value="Hello Fabric!" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=jaykidwell;AccountKey=Lxu6+aut7wAStpP4wc7GAb+wOAd2IMaO4L+q84UAlsQ703RDUIES420bopjuqHWehiQMlZUDcGdqwEb2nElhmQ==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="HelloFabric_WorkerRole">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=jaykidwell;AccountKey=Lxu6+aut7wAStpP4wc7GAb+wOAd2IMaO4L+q84UAlsQ703RDUIES420bopjuqHWehiQMlZUDcGdqwEb2nElhmQ==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
